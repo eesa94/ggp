@@ -1,0 +1,10 @@
+.heroWrapper {
+  width: 100%;
+  height: 80vh;
+  background-color: pink;
+  /* TO DO - optimise the bg image once final image is confirmed */
+  background-image: url("/images/earth.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
