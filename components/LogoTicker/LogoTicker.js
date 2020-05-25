@@ -16,15 +16,15 @@ const testImageArray = [
 
 const LogoTicker = () => {
   return (
-    <section className="section section--logo-ticker">
-      <div className={styles.logosTicker}>
-        <div className={styles.logosTickerFade}></div>
-        <div className={styles.logosTickerContainer}>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.fadeOverlay}></div>
+        <div className={styles.tickersContainer}>
           <div className="logosTickerOne">
             <div className={styles.logos}>
               {testImageArray.map((item, index) => (
                 <div>
-                  <img src={item.src} alt="" />
+                  <img className={styles.image} src={item.src} alt="" />
                   <span>{item.id}</span>
                 </div>
               ))}
@@ -34,7 +34,7 @@ const LogoTicker = () => {
             <div className={styles.logos}>
               {testImageArray.map((item, index) => (
                 <div>
-                  <img src={item.src} alt="" />
+                  <img className={styles.image} src={item.src} alt="" />
                   <span>{item.id}</span>
                 </div>
               ))}

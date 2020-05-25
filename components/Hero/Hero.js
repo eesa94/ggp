@@ -2,8 +2,8 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className="section section--home-hero">
-      <div className={styles.heroWrapper}>
+    <section className={styles.section}>
+      <div className={styles.container}>
         <span>hey</span>
       </div>
     </section>

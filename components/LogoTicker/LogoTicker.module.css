@@ -1,12 +1,15 @@
-.logosTicker {
-  max-width: 1200px;
+.section {
   height: 200px;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.logosTickerFade {
+.fadeOverlay {
   background: linear-gradient(
     to right,
     white 0,
@@ -22,7 +25,7 @@
   z-index: 2;
 }
 
-.logosTickerContainer {
+.tickersContainer {
   display: flex;
   flex-wrap: nowrap;
   width: 3800px;
@@ -32,6 +35,6 @@
   display: flex;
 }
 
-.logosTicker img {
+.image {
   margin: 0 10px;
 }
