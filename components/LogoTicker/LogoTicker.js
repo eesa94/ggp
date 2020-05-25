@@ -16,31 +16,33 @@ const testImageArray = [
 
 const LogoTicker = () => {
   return (
-    <div className={styles.logosTicker}>
-      <div className={styles.logosTickerFade}></div>
-      <div className={styles.logosTickerContainer}>
-        <div className="logosTickerOne">
-          <div className={styles.logos}>
-            {testImageArray.map((item, index) => (
-              <div>
-                <img src={item.src} alt="" />
-                <span>{item.id}</span>
-              </div>
-            ))}
+    <section className="section section--logo-ticker">
+      <div className={styles.logosTicker}>
+        <div className={styles.logosTickerFade}></div>
+        <div className={styles.logosTickerContainer}>
+          <div className="logosTickerOne">
+            <div className={styles.logos}>
+              {testImageArray.map((item, index) => (
+                <div>
+                  <img src={item.src} alt="" />
+                  <span>{item.id}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="logosTickerTwo">
-          <div className={styles.logos}>
-            {testImageArray.map((item, index) => (
-              <div>
-                <img src={item.src} alt="" />
-                <span>{item.id}</span>
-              </div>
-            ))}
+          <div className="logosTickerTwo">
+            <div className={styles.logos}>
+              {testImageArray.map((item, index) => (
+                <div>
+                  <img src={item.src} alt="" />
+                  <span>{item.id}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

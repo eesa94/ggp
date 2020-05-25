@@ -6,16 +6,16 @@ import LogoTicker from "../components/LogoTicker/LogoTicker";
 export default function Home() {
   return (
     <NavBar>
-      <div className="container">
+      <main>
         <Head>
-          <title>Create Next App</title>
+          <title>GGP</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <Hero />
 
         <LogoTicker />
-      </div>
+      </main>
     </NavBar>
   );
 }

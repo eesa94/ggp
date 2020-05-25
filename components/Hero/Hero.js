@@ -2,9 +2,11 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.heroWrapper}>
-      <span>hey</span>
-    </div>
+    <section className="section section--home-hero">
+      <div className={styles.heroWrapper}>
+        <span>hey</span>
+      </div>
+    </section>
   );
 };
 
