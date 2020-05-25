@@ -23,7 +23,7 @@ const LogoTicker = () => {
           <div className="logosTickerOne">
             <div className={styles.logos}>
               {testImageArray.map((item, index) => (
-                <div>
+                <div key={index}>
                   <img className={styles.image} src={item.src} alt="" />
                   <span>{item.id}</span>
                 </div>
@@ -33,7 +33,7 @@ const LogoTicker = () => {
           <div className="logosTickerTwo">
             <div className={styles.logos}>
               {testImageArray.map((item, index) => (
-                <div>
+                <div key={index}>
                   <img className={styles.image} src={item.src} alt="" />
                   <span>{item.id}</span>
                 </div>
