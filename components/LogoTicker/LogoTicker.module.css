@@ -29,9 +29,9 @@
 }
 
 .logos {
-  display: block;
+  display: flex;
 }
 
-.logosTicker span {
-  margin: 0 20px;
+.logosTicker img {
+  margin: 0 10px;
 }

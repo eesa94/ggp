@@ -27,13 +27,11 @@ img {
 }
 
 .logosTickerOne {
-  animation: slide 50s linear infinite;
-  font-weight: bold;
+  animation: slide 10s linear infinite;
 }
 
 .logosTickerTwo {
-  animation: slide 50s linear infinite;
-  font-weight: bold;
+  animation: slide 10s linear infinite;
 }
 
 @keyframes slide {
