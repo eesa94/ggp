@@ -12,12 +12,11 @@
   min-height: inherit;
   background-color: pink;
   /* TO DO - optimise the bg image once final image is confirmed */
-  /* background-image: url("https://source.unsplash.com/ZYu6P9-Glic/1920x1080"); */
-  background-image: url("https://source.unsplash.com/0w-uTa0Xz7w/1920x1080");
   background-image: url("https://source.unsplash.com/lsJ9jHKIqHg/1920x1080");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(0.7);
 }
 
 .gridContainer {
@@ -27,11 +26,32 @@
 }
 
 .gridColumnOne {
-  padding: 7%;
+  padding: 4%;
 }
 
 .overlayTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  border: 2px solid white;
-  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 50px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+  margin-top: 30px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
 }

@@ -8,6 +8,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  padding-top: 30px;
 }
 
 .fadeOverlay {
@@ -29,13 +30,28 @@
 .tickersContainer {
   display: flex;
   flex-wrap: nowrap;
-  width: 3800px;
+  width: 10000px;
 }
 
 .logos {
   display: flex;
 }
 
-.image {
+.imageContainer {
+  position: relative;
   margin: 0 10px;
+}
+
+.imageOverlayBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
 }

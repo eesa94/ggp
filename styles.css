@@ -38,16 +38,28 @@ h5,
 h6 {
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-bottom: 35px;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 /* ----------------- */
 /* logo ticker */
 .logosTickerOne {
-  animation: slide 50s linear infinite;
+  animation: slide 90s linear infinite;
 }
 
 .logosTickerTwo {
-  animation: slide 50s linear infinite;
+  animation: slide 90s linear infinite;
 }
 
 @keyframes slide {
