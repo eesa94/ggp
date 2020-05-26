@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
 import LogoTicker from "../components/LogoTicker/LogoTicker";
 import OurMission from "../components/OurMission/OurMission";
+import AboutUs from "../components/AboutUs/AboutUs";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <LogoTicker />
 
         <OurMission />
+
+        <AboutUs />
       </main>
     </NavBar>
   );

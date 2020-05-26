@@ -1,0 +1,37 @@
+.section {
+  min-height: 600px;
+}
+
+.container {
+  min-height: inherit;
+  width: 100%;
+}
+
+.backgroundImageContainer {
+  width: 100%;
+  min-height: inherit;
+  background-color: pink;
+  /* TO DO - optimise the bg image once final image is confirmed */
+  /* background-image: url("https://source.unsplash.com/ZYu6P9-Glic/1920x1080"); */
+  background-image: url("https://source.unsplash.com/0w-uTa0Xz7w/1920x1080");
+  background-image: url("https://source.unsplash.com/lsJ9jHKIqHg/1920x1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gridContainer {
+  min-height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gridColumnOne {
+  padding: 7%;
+}
+
+.overlayTextContainer {
+  height: 100%;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.6);
+}
