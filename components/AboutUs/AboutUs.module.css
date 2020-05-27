@@ -9,19 +9,19 @@
 .backgroundImageContainer {
   width: 100%;
   min-height: inherit;
-  background-color: pink;
+  background-color: #fff;
   /* TO DO - optimise the bg image once final image is confirmed */
   background-image: url("https://source.unsplash.com/lsJ9jHKIqHg/1920x1080");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.7);
 }
 
 .gridContainer {
   min-height: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .gridColumnOne {

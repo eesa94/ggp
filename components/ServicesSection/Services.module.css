@@ -1,0 +1,15 @@
+.section {
+  min-height: 400px;
+}
+
+.container {
+  min-height: inherit;
+  padding: 50px;
+  text-align: center;
+}
+
+.textContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}

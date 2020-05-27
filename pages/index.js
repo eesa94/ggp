@@ -5,6 +5,8 @@ import LogoTicker from "../components/LogoTicker/LogoTicker";
 import OurMission from "../components/OurMission/OurMission";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Benefits from "../components/Benefits/Benefits";
+import Services from "../components/ServicesSection/Services";
+import FurtherInformation from "../components/FurtherInformation/FurtherInformation";
 
 export default function Home() {
   return (
@@ -24,6 +26,10 @@ export default function Home() {
         <AboutUs />
 
         <Benefits />
+
+        <Services />
+
+        <FurtherInformation />
       </main>
     </NavBar>
   );
