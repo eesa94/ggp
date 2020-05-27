@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import LogoTicker from "../components/LogoTicker/LogoTicker";
 import OurMission from "../components/OurMission/OurMission";
 import AboutUs from "../components/AboutUs/AboutUs";
+import Benefits from "../components/Benefits/Benefits";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         <OurMission />
 
         <AboutUs />
+
+        <Benefits />
       </main>
     </NavBar>
   );

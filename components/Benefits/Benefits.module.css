@@ -1,0 +1,36 @@
+.section {
+  min-height: 800px;
+}
+
+.container {
+  min-height: inherit;
+  text-align: center;
+  padding: 50px 15%;
+  background-color: #030914;
+  color: #fff;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.gridBox {
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.5px);
+  padding: 20px;
+}
