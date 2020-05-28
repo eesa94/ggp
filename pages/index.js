@@ -1,5 +1,6 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar/NavBar";
+import PageLayout from "../components/PageLayout/PageLayout";
+
 import Hero from "../components/Hero/Hero";
 import LogoTicker from "../components/LogoTicker/LogoTicker";
 import OurMission from "../components/OurMission/OurMission";
@@ -10,7 +11,7 @@ import FurtherInformation from "../components/FurtherInformation/FurtherInformat
 
 export default function Home() {
   return (
-    <NavBar>
+    <PageLayout>
       <main>
         <Head>
           <title>GGP</title>
@@ -31,6 +32,6 @@ export default function Home() {
 
         <FurtherInformation />
       </main>
-    </NavBar>
+    </PageLayout>
   );
 }
