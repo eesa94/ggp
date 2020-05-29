@@ -1,4 +1,4 @@
-import styles from "./OurMission.module.css";
+import styles from "./OurMission.module.scss";
 
 const OurMission = () => {
   return (

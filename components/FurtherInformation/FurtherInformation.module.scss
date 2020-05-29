@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .section {
   min-height: 500px;
 }
@@ -15,15 +17,23 @@
 .backgroundImageContainer {
   width: 100%;
   min-height: inherit;
-  padding: 50px 20%;
+  padding: $container-padding-mobile;
   background-color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $desktop-large-breakpoint) {
+    padding: 40px 15% 70px;
+  }
 }
 
 .gridContainer {
   min-height: inherit;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+
+  @media (min-width: $desktop-small-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
 }
 
 .overlayTextContainer {
@@ -31,7 +41,11 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 20px 50px;
+  padding: 20px 30px;
   color: #000;
   background: rgba(255, 255, 255, 0.8);
+
+  @media (min-width: $desktop-large-breakpoint) {
+    padding: 20px 50px;
+  }
 }

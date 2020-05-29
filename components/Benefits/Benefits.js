@@ -1,4 +1,4 @@
-import styles from "./Benefits.module.css";
+import styles from "./Benefits.module.scss";
 
 const boxContent = [
   {

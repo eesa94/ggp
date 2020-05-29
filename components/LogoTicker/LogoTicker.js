@@ -1,4 +1,4 @@
-import styles from "./LogoTicker.module.css";
+import styles from "./LogoTicker.module.scss";
 
 const testImageArray = [
   { id: "1", src: "https://source.unsplash.com/KxB7q987Em8/140x80" },

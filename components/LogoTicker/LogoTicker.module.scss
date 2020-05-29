@@ -1,14 +1,18 @@
+@import "../../variables.scss";
+
 .section {
-  height: 200px;
+  height: 150px;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  padding-top: 30px;
 }
 
 .fadeOverlay {

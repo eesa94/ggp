@@ -1,4 +1,4 @@
-import styles from "./FurtherInformation.module.css";
+import styles from "./FurtherInformation.module.scss";
 
 const FurtherInformation = () => {
   return (

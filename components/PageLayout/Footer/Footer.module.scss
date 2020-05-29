@@ -1,0 +1,27 @@
+@import "../../../variables.scss";
+
+.footer {
+  height: 200px;
+  padding: 20px 5%;
+  background-color: #030914;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.copyright {
+  margin-bottom: 0;
+}
+
+.footer a:first-child {
+  margin-right: 30px;
+}
