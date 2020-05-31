@@ -2,7 +2,7 @@ import styles from "./Services.module.scss";
 
 const Services = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="services">
       <div className={styles.container}>
         <h2>Services</h2>
         <div className={styles.textContainer}>

@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.nav {
+  width: 100%;
+  height: $nav-height;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #030914;
+  z-index: 1000;
+}
+
+.logoContainer,
+.linksContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoContainer {
+  flex: 0.3;
+
+  h1 {
+    margin-bottom: 0;
+    color: #fff;
+  }
+}
+
+.linksContainer {
+  flex: 0.7;
+
+  a {
+    margin-right: 20px;
+    color: #fff;
+  }
+}

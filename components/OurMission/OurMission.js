@@ -2,7 +2,7 @@ import styles from "./OurMission.module.scss";
 
 const OurMission = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="our-mission">
       <div className={styles.container}>
         <h2>Our Mission</h2>
         <div className={styles.textContainer}>

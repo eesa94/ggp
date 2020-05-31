@@ -34,7 +34,7 @@ const boxContent = [
 
 const Benefits = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="benefits">
       <div className={styles.container}>
         <h2 className={styles.header}>Benefits</h2>
         <div className={styles.gridContainer}>
