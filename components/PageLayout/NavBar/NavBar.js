@@ -1,9 +1,10 @@
 import styles from "./NavBar.module.scss";
 import Link from "next/link";
-import { Link as ReactScrollLink, animateScroll } from "react-scroll";
+import { Link as ReactScrollLink } from "react-scroll";
 
 const scrollLinks = [
-  { name: "About us", id: "our-mission" },
+  { name: "Our Mission", id: "our-mission" },
+  { name: "About Us", id: "about-us" },
   { name: "Benefits", id: "benefits" },
   { name: "Services", id: "services" },
 ];
@@ -11,7 +12,7 @@ const scrollLinks = [
 const separatePageLinks = [
   { name: "Careers", url: "careers" },
   { name: "Contact", url: "contact" },
-  { name: "View rates", url: "view-rates" },
+  { name: "View Rates", url: "view-rates" },
 ];
 
 const NavBar = ({ children }) => {
@@ -27,25 +28,34 @@ const NavBar = ({ children }) => {
         </div>
         <div className={styles.linksContainer}>
           <>
-            {scrollLinks.map((link, index) => (
-              <ReactScrollLink
-                key={index}
-                activeClass="active"
-                to={link.id}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {link.name}
-              </ReactScrollLink>
-            ))}
+            <ul className={styles.scrollLinksList}>
+              {scrollLinks.map((link, index) => (
+                <li key={index} className={styles.navListItem}>
+                  <ReactScrollLink
+                    className={styles.navLink}
+                    activeClass={styles.active}
+                    to={link.id}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={900}
+                    delay={50}
+                  >
+                    {link.name}
+                  </ReactScrollLink>
+                </li>
+              ))}
+            </ul>
 
-            {separatePageLinks.map((link, index) => (
-              <Link href={`/${link.url}`} key={index}>
-                <a>{link.name}</a>
-              </Link>
-            ))}
+            <ul className={styles.separatePagesLinksList}>
+              {separatePageLinks.map((link, index) => (
+                <li key={index} className={styles.navListItem}>
+                  <Link href={`/${link.url}`} key={index}>
+                    <a className={styles.navLink}>{link.name}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </>
         </div>
       </nav>

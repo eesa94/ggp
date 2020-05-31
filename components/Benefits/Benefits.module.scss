@@ -8,12 +8,14 @@
   min-height: inherit;
   text-align: center;
   padding: $container-padding-mobile;
-  background-color: #030914;
-  color: #fff;
 
   @media (min-width: $desktop-large-breakpoint) {
     padding: 40px 15% 70px;
   }
+}
+
+.header {
+  color: #000;
 }
 
 .gridContainer {
@@ -43,7 +45,8 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.5px);
-  padding: 20px;
+  color: #fff;
 }

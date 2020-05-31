@@ -2,7 +2,7 @@ import styles from "./AboutUs.module.scss";
 
 const AboutUs = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="about-us">
       <div className={styles.container}>
         <div className={styles.backgroundImageContainer}>
           <div className={styles.gridContainer}>

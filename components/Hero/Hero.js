@@ -17,7 +17,7 @@ const Hero = () => {
   // });
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="home">
       <div className={styles.container}>
         <span>hey</span>
       </div>
