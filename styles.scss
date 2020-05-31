@@ -29,7 +29,11 @@ img {
 }
 
 main {
-  padding-top: $nav-height;
+  padding-top: $nav-height-mobile;
+
+  @media (min-width: 992px) {
+    padding-top: $nav-height-desktop;
+  }
 }
 
 section {
