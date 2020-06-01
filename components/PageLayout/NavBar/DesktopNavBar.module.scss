@@ -63,6 +63,10 @@
 
   .navLink {
     transition: 0.3s;
+
+    &:hover {
+      color: #0284ff;
+    }
   }
 
   .active {
