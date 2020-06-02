@@ -34,6 +34,7 @@
   h1 {
     margin-bottom: 0;
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -41,7 +42,7 @@
   flex: 0.7;
 }
 
-.scrollLinksList,
+.homePageSectionsLinksList,
 .separatePagesLinksList {
   list-style-type: none;
   margin-block-start: 0;
@@ -52,7 +53,7 @@
   display: flex;
 }
 
-.scrollLinksList {
+.homePageSectionsLinksList {
   position: relative;
 
   :after {
