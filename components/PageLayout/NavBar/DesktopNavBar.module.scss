@@ -7,8 +7,19 @@
   top: 0;
   display: flex;
   align-items: center;
-  background-color: #030914;
+  transition: 500ms;
   z-index: 1000;
+}
+
+.notScrolled {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scrolled {
+  padding: 0 5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
 }
 
 .logoContainer,
@@ -51,7 +62,7 @@
     top: -3px;
     bottom: -3px;
     width: 2px;
-    background-color: #0284ff;
+    background-color: $ggp-blue;
   }
 }
 
@@ -65,11 +76,11 @@
     transition: 0.3s;
 
     &:hover {
-      color: #0284ff;
+      color: $ggp-blue;
     }
   }
 
   .active {
-    color: #0284ff;
+    color: $ggp-blue;
   }
 }

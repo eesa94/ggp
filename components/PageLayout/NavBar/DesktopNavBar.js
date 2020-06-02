@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "./DesktopNavBar.module.scss";
 import Link from "next/link";
 import { Link as ReactScrollLink } from "react-scroll";
@@ -16,8 +17,28 @@ const separatePageLinks = [
 ];
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const hasPassedScrollThreshold = window.scrollY > 100;
+
+    hasPassedScrollThreshold !== scrolled
+      ? setScrolled(hasPassedScrollThreshold)
+      : setScrolled(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navClass = scrolled ? styles.scrolled : styles.notScrolled;
+
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${navClass}`}>
       <div className={styles.logoContainer}>
         <Link href="/">
           <a>

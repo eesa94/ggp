@@ -31,8 +31,8 @@ img {
 main {
   padding-top: $nav-height-mobile;
 
-  @media (min-width: 992px) {
-    padding-top: $nav-height-desktop;
+  @media (min-width: $desktop-small-breakpoint) {
+    padding-top: 0;
   }
 }
 
