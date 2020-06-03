@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "./DesktopNavBar.module.scss";
 import { homePageSectionsLinks, separatePageLinks } from "./Links";
 import Link from "next/link";
-import { Link as ReactScrollLink } from "react-scroll";
+import { Link as ReactScrollLink, animateScroll } from "react-scroll";
 
 const NavBar = ({ currentPath }) => {
   // == Scroll nav ==
@@ -24,6 +24,14 @@ const NavBar = ({ currentPath }) => {
     };
   }, []);
 
+  const renderLogo = () => (
+    <img
+      className={`${styles.logo} ${logoClass}`}
+      src="/images/logo.png"
+      alt="GGP logo"
+    />
+  );
+
   const navClass = scrolled ? styles.scrolled : styles.notScrolled;
   const logoClass = scrolled ? styles.logoScrolled : styles.logoNotScrolled;
 
@@ -32,29 +40,16 @@ const NavBar = ({ currentPath }) => {
       <div className={styles.logoContainer}>
         {currentPath === "/" ? (
           <ReactScrollLink
-            className={styles.navLink}
-            activeClass={styles.active}
-            to={"home"}
             spy={true}
             smooth={true}
-            offset={0}
             duration={900}
+            onClick={() => animateScroll.scrollToTop()}
           >
-            <img
-              className={`${styles.logo} ${logoClass}`}
-              src="/images/logo.png"
-              alt="GGP logo"
-            />
+            {renderLogo()}
           </ReactScrollLink>
         ) : (
           <Link href="/">
-            <a>
-              <img
-                className={`${styles.logo} ${logoClass}`}
-                src="/images/logo.png"
-                alt="GGP logo"
-              />
-            </a>
+            <a>{renderLogo()}</a>
           </Link>
         )}
       </div>

@@ -3,7 +3,7 @@ import styles from "./MobileNavBar.module.scss";
 import { homePageSectionsLinks, separatePageLinks } from "./Links";
 import { Squeeze } from "react-burgers";
 import Link from "next/link";
-import { Link as ReactScrollLink } from "react-scroll";
+import { Link as ReactScrollLink, animateScroll } from "react-scroll";
 
 const MobileNavBar = ({ currentPath }) => {
   const [active, setActive] = useState(false);
@@ -18,18 +18,28 @@ const MobileNavBar = ({ currentPath }) => {
 
   const menuClass = active ? styles.isOpen : styles.isClosed;
 
+  const renderLogo = () => (
+    <img className={styles.logo} src="/images/logo.png" alt="GGP logo" />
+  );
+
   return (
     <>
       <nav className={styles.nav}>
-        <Link href="/">
-          <a>
-            <img
-              className={styles.logo}
-              src="/images/logo.png"
-              alt="GGP logo"
-            />
-          </a>
-        </Link>
+        {currentPath === "/" ? (
+          <ReactScrollLink
+            spy={true}
+            smooth={true}
+            duration={900}
+            onClick={() => animateScroll.scrollToTop()}
+          >
+            {renderLogo()}
+          </ReactScrollLink>
+        ) : (
+          <Link href="/">
+            <a onClick={() => closeMenu()}>{renderLogo()}</a>
+          </Link>
+        )}
+
         <Squeeze
           width={25}
           lineHeight={3}
@@ -56,9 +66,10 @@ const MobileNavBar = ({ currentPath }) => {
                       to={link.id}
                       spy={true}
                       smooth={true}
-                      offset={-80}
+                      offset={-60}
                       duration={900}
                       delay={50}
+                      onClick={() => closeMenu()}
                     >
                       {link.name}
                     </ReactScrollLink>
