@@ -24,6 +24,7 @@ const NavBar = ({ currentPath }) => {
   }, []);
 
   const navClass = scrolled ? styles.scrolled : styles.notScrolled;
+  const logoClass = scrolled ? styles.logoScrolled : styles.logoNotScrolled;
   // =====
 
   // == Generate nav links ==
@@ -55,12 +56,20 @@ const NavBar = ({ currentPath }) => {
             offset={0}
             duration={900}
           >
-            <h1>GGP</h1>
+            <img
+              className={`${styles.logo} ${logoClass}`}
+              src="/images/logo.png"
+              alt="GGP logo"
+            />
           </ReactScrollLink>
         ) : (
           <Link href="/">
             <a>
-              <h1>GGP</h1>
+              <img
+                className={`${styles.logo} ${logoClass}`}
+                src="/images/logo.png"
+                alt="GGP logo"
+              />
             </a>
           </Link>
         )}

@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         <Head>
           <title>GGP</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/images/favicon.png" />
         </Head>
 
         <Hero />

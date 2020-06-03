@@ -2,21 +2,22 @@
 
 .nav {
   width: 100%;
-  height: $nav-height-desktop;
   position: fixed;
   top: 0;
   display: flex;
   align-items: center;
-  transition: 500ms;
+  transition: 300ms;
   z-index: 1000;
 }
 
 .notScrolled {
+  height: $nav-height-desktop + 20;
   padding: 0;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .scrolled {
+  height: $nav-height-desktop;
   padding: 0 5%;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(3px);
@@ -28,6 +29,8 @@
   justify-content: center;
 }
 
+// =====
+// Logo
 .logoContainer {
   flex: 0.3;
 
@@ -38,6 +41,21 @@
   }
 }
 
+.logo {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.logoScrolled {
+  height: 60px;
+}
+
+.logoNotScrolled {
+  height: 80px;
+}
+
+// =====
+// Links
 .linksContainer {
   flex: 0.7;
 }
