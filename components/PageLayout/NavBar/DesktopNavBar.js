@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./DesktopNavBar.module.scss";
+import { homePageSectionsLinks, separatePageLinks } from "./Links";
 import Link from "next/link";
 import { Link as ReactScrollLink } from "react-scroll";
 
@@ -25,23 +26,6 @@ const NavBar = ({ currentPath }) => {
 
   const navClass = scrolled ? styles.scrolled : styles.notScrolled;
   const logoClass = scrolled ? styles.logoScrolled : styles.logoNotScrolled;
-  // =====
-
-  // == Generate nav links ==
-  const homePageSectionsLinks = [
-    { name: "Our Mission", id: "our-mission" },
-    { name: "About Us", id: "about-us" },
-    { name: "Benefits", id: "benefits" },
-    { name: "Services", id: "services" },
-  ];
-
-  const separatePageLinks = [
-    { name: "Careers", url: "careers" },
-    { name: "Contact", url: "contact" },
-    { name: "View Rates", url: "view-rates" },
-  ];
-
-  // =====
 
   return (
     <nav className={`${styles.nav} ${navClass}`}>

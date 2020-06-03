@@ -17,7 +17,7 @@ const PageLayout = ({ children }) => {
   return (
     <>
       <MediaQuery maxDeviceWidth={991}>
-        <MobileNavBar />
+        <MobileNavBar currentPath={currentPath} />
       </MediaQuery>
 
       <MediaQuery minDeviceWidth={992}>
