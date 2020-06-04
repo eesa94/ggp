@@ -2,7 +2,7 @@ import styles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" form-name="contact" method="POST" data-netlify="true">
       <p>
         <label>
           Your Name: <input type="text" name="name" />
