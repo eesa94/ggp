@@ -2,6 +2,7 @@ import Head from "next/head";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
 import Hero from "../../components/Hero/Hero";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const Contact = () => {
   return (
@@ -13,6 +14,8 @@ const Contact = () => {
         </Head>
 
         <Hero image={"sky-desktop-optimised.jpg"} />
+
+        <ContactForm />
       </main>
     </PageLayout>
   );
