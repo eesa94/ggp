@@ -12,6 +12,17 @@ const MobileNavBar = ({ currentPath }) => {
     setActive(!active);
   };
 
+  // If menu is open, disable scroll on the body
+  useEffect(() => {
+    if (active) {
+      document.querySelector("body").setAttribute("class", styles.lockScroll);
+    } else {
+      document
+        .querySelector("body")
+        .removeAttribute("class", styles.lockScroll);
+    }
+  }, [active]);
+
   const closeMenu = () => {
     setActive(false);
   };
