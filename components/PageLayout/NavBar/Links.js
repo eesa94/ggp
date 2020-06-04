@@ -6,7 +6,7 @@ export const homePageSectionsLinks = [
 ];
 
 export const separatePageLinks = [
-  { name: "Careers", url: "careers" },
   { name: "Contact", url: "contact" },
   { name: "View Rates", url: "view-rates" },
+  { name: "Careers", url: "careers" },
 ];
