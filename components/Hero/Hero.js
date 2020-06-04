@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 // import { useEffect } from "react";
 
-const Hero = () => {
+const Hero = ({ image }) => {
   // https://stackoverflow.com/questions/1927610/how-to-verify-background-css-image-was-loaded
   // not sure if the below actually makes a difference
   // alternatively try this https://www.selbekk.io/blog/2019/05/how-to-write-a-progressive-image-loading-hook/
@@ -18,7 +18,10 @@ const Hero = () => {
 
   return (
     <section className={styles.section} id="home">
-      <div className={styles.container}></div>
+      <div
+        className={styles.container}
+        style={{ backgroundImage: `url(/images/${image})` }}
+      ></div>
     </section>
   );
 };

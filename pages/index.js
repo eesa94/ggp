@@ -18,7 +18,7 @@ export default function Home() {
           <link rel="icon" href="/images/favicon.png" />
         </Head>
 
-        <Hero />
+        <Hero image={"earth-desktop-optimised.jpg"} />
 
         <LogoTicker />
 
