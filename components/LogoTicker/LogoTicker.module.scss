@@ -1,7 +1,11 @@
 @import "../../variables.scss";
 
 .section {
-  height: 150px;
+  height: 100px;
+
+  @media (min-width: $desktop-small-breakpoint) {
+    height: 150px;
+  }
 }
 
 .container {

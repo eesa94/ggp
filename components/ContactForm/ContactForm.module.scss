@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.section {
+  min-height: 400px;
+}
+
+.container {
+  min-height: inherit;
+  padding: $container-padding-mobile;
+
+  @media (min-width: $desktop-small-breakpoint) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
