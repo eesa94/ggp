@@ -45,12 +45,14 @@ const ContactForm = () => {
 
           <Input
             label="First Name"
+            name="First Name"
             type="text"
             required={true}
             floatingLabel={true}
           />
           <Input
             label="Last Name"
+            name="Last Name"
             type="text"
             required={true}
             floatingLabel={true}
@@ -58,16 +60,20 @@ const ContactForm = () => {
 
           <Input
             label="Email Address"
+            name="Email Address"
             type="email"
             floatingLabel={true}
             required={true}
           />
           <Textarea
-            label="Required Textarea"
+            label="Message"
+            name="Message"
             floatingLabel={true}
             required={true}
           />
-          <Button variant="raised">Submit</Button>
+          <Button variant="raised" type="submit">
+            Submit
+          </Button>
         </form>
       </div>
     </section>
