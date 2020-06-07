@@ -77,7 +77,7 @@ const MobileNavBar = ({ currentPath }) => {
                       to={link.id}
                       spy={true}
                       smooth={true}
-                      offset={-60}
+                      offset={-70}
                       duration={900}
                       delay={50}
                       onClick={() => closeMenu()}
