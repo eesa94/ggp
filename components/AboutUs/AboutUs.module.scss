@@ -56,9 +56,9 @@
   cursor: pointer;
   position: relative;
   transition: 0.5s;
-}
 
-.button:hover {
-  background-color: #fff;
-  color: #000;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }

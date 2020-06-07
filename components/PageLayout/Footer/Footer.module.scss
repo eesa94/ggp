@@ -1,14 +1,15 @@
 @import "../../../variables.scss";
 
 .footer {
-  height: 200px;
+  height: 150px;
   padding: 20px 5%;
-  background-color: #030914;
+  background-color: #000;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
 
   @media (min-width: $tablet-breakpoint) {
     height: 100px;
