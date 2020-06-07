@@ -1,5 +1,4 @@
 import styles from "./ContactForm.module.scss";
-import Form from "muicss/lib/react/form";
 import Input from "muicss/lib/react/input";
 import Textarea from "muicss/lib/react/textarea";
 import Button from "muicss/lib/react/button";
@@ -42,24 +41,33 @@ const ContactForm = () => {
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <Form>
-            <legend>Contact us</legend>
-            <Input label="First Name" required={true} floatingLabel={true} />
-            <Input label="Last Name" required={true} floatingLabel={true} />
+          <legend>Contact us</legend>
 
-            <Input
-              label="Email Address"
-              type="email"
-              floatingLabel={true}
-              required={true}
-            />
-            <Textarea
-              label="Required Textarea"
-              floatingLabel={true}
-              required={true}
-            />
-            <Button variant="raised">Submit</Button>
-          </Form>
+          <Input
+            label="First Name"
+            type="text"
+            required={true}
+            floatingLabel={true}
+          />
+          <Input
+            label="Last Name"
+            type="text"
+            required={true}
+            floatingLabel={true}
+          />
+
+          <Input
+            label="Email Address"
+            type="email"
+            floatingLabel={true}
+            required={true}
+          />
+          <Textarea
+            label="Required Textarea"
+            floatingLabel={true}
+            required={true}
+          />
+          <Button variant="raised">Submit</Button>
         </form>
       </div>
     </section>
