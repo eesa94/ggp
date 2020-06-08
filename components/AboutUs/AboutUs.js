@@ -8,22 +8,28 @@ const AboutUs = () => {
           <div className={styles.gridContainer}>
             <div className={styles.gridColumnOne}>
               <div className={styles.overlayTextContainer}>
-                <h2>
-                  Subway tile fingerstache authentic, kombucha humblebrag ugh
-                  franzen twee yr lyft
-                </h2>
+                <h2>About us</h2>
                 <p>
-                  Master cleanse poke pork belly vinyl, single-origin coffee DIY
-                  microdosing paleo XOXO tofu tousled man bun. Kickstarter
-                  jianbing food truck pabst organic poutine pork belly
-                  humblebrag cornhole.
+                  What differentiates Global Gas & Power is the personal service
+                  we offer businesses, and the level of sophisticated analysis
+                  and the keen understanding of the energy markets that a
+                  wholesale consulting firm our size brings to the table.
                 </p>
                 <p>
-                  Normcore VHS single-origin coffee blue bottle, pabst four loko
-                  stumptown brunch keytar shabby chic unicorn. Microdosing
-                  occupy ennui cornhole
+                  Global Gas & Power take a hands-on approach and customize
+                  plans for each individual client and company we work with.
+                  We’re able to manage your budget with a fixed rate. All of
+                  this adds up to significant savings for our customers and
+                  makes it easy to understand why so many businesses choose us –
+                  and why our customer retention levels are measurably higher
+                  than other consulting firms.
                 </p>
-                <button className={styles.button}>Take Me Somewhere</button>
+                <p>
+                  At Empire Power and Gas, we have a platform that enables 30+
+                  direct energy suppliers to all bid against each other, what
+                  this does is ensure we can get you the most aggressive rate in
+                  any market condition.
+                </p>
               </div>
             </div>
           </div>

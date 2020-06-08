@@ -7,22 +7,25 @@ const Services = () => {
         <h2>Services</h2>
         <div className={styles.textContainer}>
           <p>
-            Literally godard taiyaki post-ironic, cliche artisan wolf hell of
-            YOLO letterpress try-hard scenester 8-bit pickled. Tilde post-ironic
-            try-hard gluten-free. Readymade edison bulb fanny pack VHS. Mixtape
-            literally roof party tumblr, godard twee vape paleo vegan raw denim
-            cornhole chia YOLO sriracha. Chia prism ethical, helvetica whatever
-            health goth affogato.
+            Choosing a gas/electricity supplier for your business can be taxing
+            and time consuming. If running a small, medium or corporate sized
+            business, you can possibly slash down your gas and power expenditure
+            by switching tariffs or providers. But unlike domestic energy,
+            tariffs are customized and can have huge variations. So, the idea
+            behind finding the most suitable business electricity is shopping
+            around.
           </p>
 
           <p>
-            Wayfarers VHS post-ironic unicorn 90's brunch viral lumbersexual
-            literally bespoke selvage semiotics vegan. Polaroid scenester shaman
-            etsy tacos, meggings paleo. VHS fam farm-to-table four dollar toast,
-            sriracha hot chicken marfa mixtape adaptogen hammock wolf. Slow-carb
-            vegan artisan succulents. Retro truffaut VHS vaporware, occupy
-            vexillologist synth.
+            Global Gas & Power allow 30+ direct energy suppliers to directly bid
+            to win your business, therefore ensuring you get their rock bottom
+            prices. The challenge will however set in when it comes to comparing
+            plans. Global Gas & Power certified energy consultants have over 25
+            years’ experience and will offer sound professional advice in which
+            tariff best suits your business.
           </p>
+
+          <img src="/images/logo.png" alt="ggp logo" className={styles.logo} />
         </div>
       </div>
     </section>

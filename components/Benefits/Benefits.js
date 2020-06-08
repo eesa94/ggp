@@ -2,32 +2,32 @@ import styles from "./Benefits.module.scss";
 
 const boxContent = [
   {
-    text: "Normcore VHS single-origin coffee blue bottle",
+    text: "Reduce operating overheads, giving you the competitive advantage.",
     src: "https://source.unsplash.com/ahi73ZN5P0Y",
   },
   {
     text:
-      "Readymade try-hard health goth irony ennui glossier. Pug banjo stumptown PBR&B pour-over umami",
+      "Fully inclusive fixed rates so you have peace of mind that your energy costs won’t spike in the duration of your contract term.",
     src: "https://source.unsplash.com/yETqkLnhsUI",
   },
   {
     text:
-      "Ennui cornhole fashion axe ethical enamel pin meditation poke, subway tile fingerstache authentic, kombucha humblebrag",
+      "Streamline your portfolio by aligning contract end dates giving you optimum position to secure the best prices at your renewals.",
     src: "https://source.unsplash.com/XGAZzyLzn18",
   },
   {
     text:
-      "Master cleanse poke pork belly vinyl, single-origin coffee DIY microdosing",
+      "All contracts between your business and your chosen supplier are regulated by OFGEM.",
     src: "https://source.unsplash.com/a1Lm99Kkqtg",
   },
   {
     text:
-      "Paleo XOXO tofu tousled man bun. Kickstarter jianbing food truck pabst organic poutine pork belly humblebrag cornhole",
+      "Dedicated Account Management and Customer Service teams are available 7 days a week from 8am-8pm.",
     src: "https://source.unsplash.com/_SFJhRPzJHs",
   },
   {
     text:
-      "Pug banjo stumptown PBR&B pour-over umami normcore VHS single-origin",
+      "Global Gas & Power offers a free utility analysation to identify which tariffs would best suit your business.",
     src: "https://source.unsplash.com/k9e4KXs6AGQ",
   },
 ];

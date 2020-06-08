@@ -16,6 +16,12 @@ export default function Home() {
         <Head>
           <title>GGP</title>
           <link rel="icon" href="/images/favicon.png" />
+          <link
+            href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css"
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+          />
         </Head>
 
         <Hero image={"earth-desktop-optimised.jpg"} />
