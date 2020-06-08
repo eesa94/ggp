@@ -44,6 +44,7 @@
   align-items: center;
   min-height: 300px;
   padding: 20px 30px;
+  position: relative;
   color: #000;
   background: rgba(255, 255, 255, 0.8);
 
@@ -54,6 +55,11 @@
   p {
     margin-bottom: 30px;
   }
+}
+
+.link {
+  position: absolute;
+  bottom: 12%;
 }
 
 .button {

@@ -16,7 +16,7 @@ const FurtherInformation = () => {
                   will be glad to answer any queries you may have.
                 </p>
                 <Link href="/contact">
-                  <a>
+                  <a className={styles.link}>
                     <Button className={styles.button}>Contact us</Button>
                   </a>
                 </Link>
@@ -26,12 +26,11 @@ const FurtherInformation = () => {
               <div className={styles.overlayTextContainer}>
                 <h2 className={styles.boxHeader}>View rates</h2>
                 <p>
-                  To see our rates, please provide your contact details and a
-                  Senior Energy Consultant will be in touch with you within 24
-                  hours.
+                  Please provide your contact details and a Senior Energy
+                  Consultant will be in touch with you within 24 hours.
                 </p>
                 <Link href="/view-rates">
-                  <a>
+                  <a className={styles.link}>
                     <Button className={styles.button}>View rates</Button>
                   </a>
                 </Link>
