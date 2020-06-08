@@ -19,7 +19,7 @@ const Contact = () => {
           />
         </Head>
 
-        <Hero image={"sky-desktop-optimised.jpg"} />
+        <Hero image={"sky.jpg"} darken={"0.55"} header={"Contact us"} />
 
         <ContactForm />
       </main>

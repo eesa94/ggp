@@ -10,3 +10,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  // background-color: rgba(0, 0, 0, 0.45);
+}
+
+.header {
+  margin-bottom: 0;
+  margin-top: 50px;
+  color: #fff;
+}
