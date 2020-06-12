@@ -2,7 +2,8 @@ import Head from "next/head";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
 import Hero from "../../components/Hero/Hero";
-import ContactForm from "../../components/ContactForm/ContactForm";
+import ContactInformation from "../../components/Contact/ContactInformation";
+import ContactForm from "../../components/Contact/ContactForm";
 
 const Contact = () => {
   return (
@@ -20,6 +21,8 @@ const Contact = () => {
         </Head>
 
         <Hero image={"sky.jpg"} darken={"0.55"} header={"Contact us"} />
+
+        <ContactInformation />
 
         <ContactForm />
       </main>
