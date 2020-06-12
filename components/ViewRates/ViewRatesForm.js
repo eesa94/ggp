@@ -76,7 +76,7 @@ const ViewRatesForm = () => {
             label="Opt in to risk-free service"
             checked={checked}
             onChange={handleChange}
-            value={checked}
+            value={checked ? "Yes" : "No"}
           />
 
           <Button type="submit" className={styles.button}>
