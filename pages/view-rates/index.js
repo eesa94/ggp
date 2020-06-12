@@ -2,15 +2,14 @@ import Head from "next/head";
 import PageLayout from "../../components/PageLayout/PageLayout";
 
 import Hero from "../../components/Hero/Hero";
-import ContactInformation from "../../components/Contact/ContactInformation";
-import ContactForm from "../../components/Contact/ContactForm";
+import ViewRatesForm from "../../components/ViewRates/ViewRatesForm";
 
-const Contact = () => {
+const ViewRates = () => {
   return (
     <PageLayout>
       <main>
         <Head>
-          <title>GGP | Contact</title>
+          <title>GGP | View Rates</title>
           <link rel="icon" href="/images/favicon.png" />
           <link
             href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css"
@@ -20,14 +19,12 @@ const Contact = () => {
           />
         </Head>
 
-        <Hero image={"sky.jpg"} darken={"0.55"} header={"Contact Us"} />
+        <Hero image={"pylons.jpg"} darken={"0.60"} header={"View Rates"} />
 
-        <ContactInformation />
-
-        <ContactForm />
+        <ViewRatesForm />
       </main>
     </PageLayout>
   );
 };
 
-export default Contact;
+export default ViewRates;
