@@ -1,9 +1,16 @@
+import { useState } from "react";
 import styles from "./ViewRatesForm.module.scss";
 import Input from "muicss/lib/react/input";
 import Button from "muicss/lib/react/button";
 import Checkbox from "muicss/lib/react/checkbox";
 
 const ViewRatesForm = () => {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -64,7 +71,13 @@ const ViewRatesForm = () => {
             that will deliver you savings.
           </p>
 
-          <Checkbox name="Opt in" label="Opt in to risk-free service" />
+          <Checkbox
+            name="Opt in"
+            label="Opt in to risk-free service"
+            checked={checked}
+            onChange={handleChange}
+            value={checked}
+          />
 
           <Button type="submit" className={styles.button}>
             Submit
