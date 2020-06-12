@@ -25,7 +25,7 @@ const AboutUs = () => {
                   than other consulting firms.
                 </p>
                 <p>
-                  At Empire Power and Gas, we have a platform that enables 30+
+                  At Global Gas & Power, we have a platform that enables 30+
                   direct energy suppliers to all bid against each other, what
                   this does is ensure we can get you the most aggressive rate in
                   any market condition.

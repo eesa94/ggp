@@ -7,6 +7,8 @@ const ContactForm = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
+        <h2>Leave us a message</h2>
+
         <form
           name="contact"
           method="POST"
@@ -16,33 +18,43 @@ const ContactForm = () => {
           <input type="hidden" name="form-name" value="contact" />
 
           <Input
-            label="First Name"
-            name="First Name"
+            label="Business Name"
+            name="Business Name"
             type="text"
             required={true}
             floatingLabel={true}
           />
           <Input
-            label="Last Name"
-            name="Last Name"
+            label="Contact Name"
+            name="Contact Name"
             type="text"
             required={true}
             floatingLabel={true}
           />
 
           <Input
-            label="Email Address"
-            name="Email Address"
+            label="Email"
+            name="Email"
             type="email"
             floatingLabel={true}
             required={true}
           />
+
+          <Input
+            label="Phone"
+            name="Phone"
+            type="number"
+            floatingLabel={true}
+            required={true}
+          />
+
           <Textarea
             label="Message"
             name="Message"
             floatingLabel={true}
             required={true}
           />
+
           <Button type="submit" className={styles.button}>
             Submit
           </Button>
