@@ -41,8 +41,8 @@ const ContactForm = () => {
           />
 
           <Input
-            label="Phone"
-            name="Phone"
+            label="Phone Number"
+            name="Phone Number"
             type="number"
             floatingLabel={true}
             required={true}

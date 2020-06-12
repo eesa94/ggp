@@ -76,6 +76,16 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.mui-checkbox {
+  label {
+    font-size: 16px;
+
+    input[type="checkbox"] {
+      height: 19px;
+    }
+  }
+}
+
 /* ----------------- */
 /* logo ticker */
 .logosTickerOne {
