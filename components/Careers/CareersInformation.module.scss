@@ -8,7 +8,7 @@
   min-height: inherit;
   padding: $container-padding-mobile;
 
-  @media (min-width: $desktop-small-breakpoint) {
+  @media (min-width: $tablet-breakpoint) {
     max-width: 800px;
     margin: 0 auto;
   }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./MobileNavBar.module.scss";
 import { homePageSectionsLinks, separatePageLinks } from "./Links";
-import { Squeeze } from "react-burgers";
+import { Collapse } from "react-burgers";
 import Link from "next/link";
 import { Link as ReactScrollLink, animateScroll } from "react-scroll";
 
@@ -51,7 +51,7 @@ const MobileNavBar = ({ currentPath }) => {
           </Link>
         )}
 
-        <Squeeze
+        <Collapse
           width={25}
           lineHeight={3}
           lineSpacing={4}

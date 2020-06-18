@@ -23,7 +23,7 @@
   padding: $container-padding-mobile;
   background-color: rgba(0, 0, 0, 0.3);
 
-  @media (min-width: $desktop-large-breakpoint) {
+  @media (min-width: $tablet-breakpoint) {
     padding: 40px 15% 70px;
   }
 }

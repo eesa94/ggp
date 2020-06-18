@@ -9,7 +9,7 @@
   padding: $container-padding-mobile;
   padding-bottom: 0;
 
-  @media (min-width: $desktop-small-breakpoint) {
+  @media (min-width: $tablet-breakpoint) {
     max-width: 800px;
     margin: 0 auto;
   }
