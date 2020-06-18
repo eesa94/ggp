@@ -86,6 +86,10 @@ input[type="number"] {
   }
 }
 
+.mui-textfield--float-label > label {
+  color: rgba(0, 0, 0, 0.88);
+}
+
 /* ----------------- */
 /* logo ticker */
 .logosTickerOne {
