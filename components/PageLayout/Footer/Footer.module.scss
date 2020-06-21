@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .footer {
-  height: 150px;
+  height: $footer-height-mobile;
   padding: 20px 5%;
   background-color: #000;
   color: #fff;
@@ -12,7 +12,7 @@
   font-size: 14px;
 
   @media (min-width: $tablet-breakpoint) {
-    height: 100px;
+    height: $footer-height-tablet;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

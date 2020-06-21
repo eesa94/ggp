@@ -10,10 +10,6 @@
   min-height: inherit;
   padding: $container-padding-mobile;
   text-align: center;
-
-  @media (min-width: $tablet-breakpoint) {
-    padding: 40px 15% 70px;
-  }
 }
 
 .textContainer {

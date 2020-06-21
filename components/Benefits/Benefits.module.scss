@@ -7,7 +7,7 @@
 .container {
   min-height: inherit;
   text-align: center;
-  padding: $container-padding-mobile;
+  padding: 40px 5% 70px;
 
   @media (min-width: $desktop-large-breakpoint) {
     padding: 40px 15% 70px;
