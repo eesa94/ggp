@@ -14,10 +14,10 @@ const CareersInformation = () => {
             needn’t look any further.
           </p>
           <p>
-            Global Gas & Power’s Director David Shaw started off working in a
-            customer service role at EDF and quickly rose through the ranks of
-            the business before eventually setting up a successful consultancy
-            firm. Therefore, at Global Gas & Power we firmly believe that with
+            Global Gas & Power’s Director started off working in a customer
+            service role at EDF and quickly rose through the ranks of the
+            business before eventually setting up a successful consultancy firm.
+            Therefore, at Global Gas & Power we firmly believe that with
             dedication and hard work you can become anything that your heart
             desires, and we provide the perfect platform for you to succeed.
           </p>
